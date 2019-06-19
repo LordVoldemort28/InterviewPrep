@@ -34,9 +34,12 @@ Followed by [InterviewBit](https://www.interviewbit.com)
 * [Hacker Rank questions](https://www.hackerrank.com/interview/interview-preparation-kit)
 
 	* Track your course in this Excel
-###All assignment are based on Interview bit
+	
+All assignment are based on Interview bit
+-------------------------------------------
 
-####Assignments
+**Assignments**
+
 0. [Time complexity](https://www.interviewbit.com/courses/programming/topics/time-complexity/)
 1. Array and String
 2. Hashing and LinkedList
@@ -46,7 +49,8 @@ Followed by [InterviewBit](https://www.interviewbit.com)
 6. Graph 
 7. Dynamic programming 
 
-####Special Topics( If possible )
+**Special Topics( If possible )**
+
 1. Fundamentals System Design
 2. Software enginerring
 	* Agile 
