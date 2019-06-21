@@ -1,10 +1,28 @@
 __Tips and solutions for coding problems__
 
-Link used in index
------------------
-1. [Advent Code 2018](https://adventofcode.com/)
-2. [Google Foundation of Programming Problems](https://techdevguide.withgoogle.com/paths/foundational/find-longest-word-in-dictionary-that-subsequence-of-given-string/#code-challenge) 
+#To bring change first believe in yourself  
 
+Topics covering
+-----------------
+0. [Time complexity](https://www.interviewbit.com/courses/programming/topics/time-complexity/)
+1. Array and String
+2. Hashing and LinkedList
+3. Tree and Binary search 
+4. Heaps and Maps 
+5. Backtracking and Bit manipulation 
+6. Graph 
+7. Dynamic programming 
+
+**Special Topics( If possible )**
+
+1. Fundamentals System Design
+2. Software enginerring
+	* Agile 
+	* Waterfall 
+3. Frameworks
+	* React.js
+	* Angular.js
+4. Android
 
 Stanford Lecture
 ------------------
@@ -21,10 +39,9 @@ Stanford Lecture
 * Project workshop 
 * Review each others resume
 
-MIT Lecture
---------------
-
-Harvard Lecture
-------------------
-
-
+Resources
+-----------------
+1. [Advent Code 2018](https://adventofcode.com/)
+2. [Google Foundation of Programming Problems](https://techdevguide.withgoogle.com/paths/foundational/find-longest-word-in-dictionary-that-subsequence-of-given-string/#code-challenge)
+3. [CS9: Problem-solving for CS Technical interview](http://web.stanford.edu/class/cs9/) 
+ 
