@@ -1,6 +1,6 @@
 __Tips and solutions for coding problems__
 
-#To bring change first believe in yourself  
+<center>__To bring change first believe in yourself__</center>  
 
 Topics covering
 -----------------
