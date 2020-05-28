@@ -8,25 +8,25 @@ Topics covering
 0. [Time complexity](https://www.interviewbit.com/courses/programming/topics/time-complexity/)
 ### Data Structures
 
-	1. Arrays and Strings  
-		Hash Tables
-		ArrayList & Resizable Arrays
-		String Builder
-	2. Linked Lists
-		Creating a Linked List
-		Deleting a Node from a Singly Linked List
-		The "Runner" Technique
-		Recursive Problems
-	3. Stacks and Queues
-		Implementing a Stack
-		Implementing a Queue
-	4. Trees and Graphs
-		Types of Trees
-		Binary Tree Reversal
-		Binary Heaps (Min-Heaps, and Max-Heaps)
-		Tries (Prefix trees)
-		Graphs
-		Graph Search
+1. Arrays and Strings  
+	* Hash Tables
+	* ArrayList & Resizable Arrays
+	* String Builder
+2. Linked Lists
+	* Creating a Linked List
+	* Deleting a Node from a Singly Linked List
+	* The "Runner" Technique
+	* Recursive Problems
+3. Stacks and Queues
+	* Implementing a Stack
+	* Implementing a Queue
+4. Trees and Graphs
+	* Types of Trees
+	* Binary Tree Reversal
+	* Binary Heaps (Min-Heaps, and Max-Heaps)
+	* Tries (Prefix trees)
+	* Graphs
+	* Graph Search
 
 
 **Special Topics( If possible )**
