@@ -28,8 +28,21 @@ Topics covering
 	* Graphs
 	* Graph Search
 
+#### Concepts and Algorithm
 
-**Special Topics( If possible )**
+5. Bit Manipulation
+6. Math and Logic Puzzles
+7. Object Oriented Design  
+8. Recursion and Dynamic Programming
+	* How to approach
+	* Recursive vs. Iterative Solutions
+	* Dynamic Programming & Memoization
+9. System Design and Scalability
+10. Sorting and Searching
+	* Common Sorting Algorithms
+	* Searching Algorithms
+	
+#### Special Topics( If possible )**
 
 1. Fundamentals System Design
 2. Software enginerring
