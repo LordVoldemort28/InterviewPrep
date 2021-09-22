@@ -6,15 +6,43 @@ __Tips and solutions for coding problems__
 Topics covering
 -----------------
 0. [Time complexity](https://www.interviewbit.com/courses/programming/topics/time-complexity/)
-1. Array and String
-2. Hashing and LinkedList
-3. Tree and Binary search 
-4. Heaps and Maps 
-5. Backtracking and Bit manipulation 
-6. Graph 
-7. Dynamic programming 
+### Data Structures
 
-**Special Topics( If possible )**
+1. Arrays and Strings  
+	* Hash Tables
+	* ArrayList & Resizable Arrays
+	* String Builder
+2. Linked Lists
+	* Creating a Linked List
+	* Deleting a Node from a Singly Linked List
+	* The "Runner" Technique
+	* Recursive Problems
+3. Stacks and Queues
+	* Implementing a Stack
+	* Implementing a Queue
+4. Trees and Graphs
+	* Types of Trees
+	* Binary Tree Reversal
+	* Binary Heaps (Min-Heaps, and Max-Heaps)
+	* Tries (Prefix trees)
+	* Graphs
+	* Graph Search
+
+#### Concepts and Algorithm
+
+5. Bit Manipulation
+6. Math and Logic Puzzles
+7. Object Oriented Design  
+8. Recursion and Dynamic Programming
+	* How to approach
+	* Recursive vs. Iterative Solutions
+	* Dynamic Programming & Memoization
+9. System Design and Scalability
+10. Sorting and Searching
+	* Common Sorting Algorithms
+	* Searching Algorithms
+	
+#### Special Topics( If possible )**
 
 1. Fundamentals System Design
 2. Software enginerring
