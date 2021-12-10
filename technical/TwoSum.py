@@ -35,15 +35,15 @@ def twoSum(targetIdx, arr):
             low += 1
 
     if len(result) != 0:
-      return result
+        return result
 
     return -1
 
 
+arr = [-1, 0, 1, 2, -1, -4, -2, -3, 3, 0, 4]
+target = -4
 print(twoSum(target, sorted(arr)))
 #[[-4,0,4],[-4,1,3],[-3,-1,4],[-3,0,3],[-3,1,2],[-2,-1,3],[-2,0,2],[-1,-1,2],[-1,0,1]]
 
-arr = [-1, 0, 1, 2, -1, -4, -2, -3, 3, 0, 4]
-target = -4
 # print(sorted(arr))
 # print(threeSum(arr))

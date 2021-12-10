@@ -32,7 +32,6 @@ class QueueNode:
     def __lt__(self, node):
         return self.priority < node.priority
 
-
 heap = PriorityQueue()
 
 heap.push(QueueNode('rahul', 3))
