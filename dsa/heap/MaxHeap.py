@@ -34,8 +34,10 @@ maxHeap.push(2)
 maxHeap.push(6)
 maxHeap.push(1)
 
-print(maxHeap.pop())
-print(maxHeap.pop())
-print(maxHeap.pop())
+print(maxHeap.heap)  # [-6, -2, -1]
+
+print(maxHeap.pop()) # 6
+print(maxHeap.pop()) # 2
+print(maxHeap.pop()) # 1
 
 print(maxHeap.pop())
