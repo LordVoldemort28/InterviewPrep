@@ -22,6 +22,8 @@ elements (greater than x) after x.
 Advantage: Space complexity
 Modified by: Rahul Prajapati
 Bonus: https://yongdanielliang.github.io/animation/web/QuickSortNew.html
+Time Complexity: O(nlogn)
+Space Complexity: O(1)
 """
 
 def partition_at_last(arr, low, high):

@@ -1,9 +1,16 @@
 def isvalid(grid, i, j):
+    
+    row = len(grid)
+    col = len(grid[0])
 
-    if i < 0 or i >= len(grid) or j < 0 or j >= len(grid[0]):
-        return False
+    if i in range(0, row) and j in range(0, col):
+        return True
+    
+    # @deprecate
+    # if i < 0 or i >= len(grid) or j < 0 or j >= len(grid[0]):
+    #     return False
 
-    return True
+    return False
 
 
 def change_color(grid, i, j, target_color):
