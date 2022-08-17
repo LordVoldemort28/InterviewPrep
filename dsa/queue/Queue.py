@@ -23,11 +23,14 @@ class SimpleQueue():
     def __init__(self):
         self.queue = []
         
-    def queueItem(self, item):
+    def enqueue(self, item):
         self.queue.append(item)
     
     def dequeue(self):
         return self.queue.pop(0)
+    
+    def is_empty(self):
+        return self.size() == 0
     
     def size(self):
         return len(self.queue)
@@ -35,11 +38,11 @@ class SimpleQueue():
 def main():
     q = SimpleQueue()
     
-    q.queueItem(1)
-    q.queueItem(2)
-    q.queueItem(3)
-    q.queueItem(4)
-    q.queueItem(5)
+    q.enqueue(1)
+    q.enqueue(2)
+    q.enqueue(3)
+    q.enqueue(4)
+    q.enqueue(5)
     
     print("Dequeue: {}".format(q.dequeue()))
     print("Dequeue: {}".format(q.dequeue()))

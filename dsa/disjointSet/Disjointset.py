@@ -31,13 +31,14 @@ class DisjointSet():
         for i in range(0, universe):
             self.parent[i] = i
 
-    def find(self, x):
+    def find2(self, x):
         #Time complexity: O(N)
         if self.parent[x] == x:
             return x
-        return self.find(self.parent[x])
+        return self.find2(self.parent[x])
 
-    def optimized_path_compression_find(self, x):
+    #Optimized path compression find
+    def find(self, x):
         #Time complexity: O(logN)
         if self.parent[x] == x:
             return x
@@ -88,11 +89,13 @@ class Solutions(object):
             for j in range(0, size):
                 if isConnected[i][j] == 1:
                     djs.union(i, j)
+                    
         print(djs.parent)
         return djs.numParent()
 
+if __name__ == '__main__':
+    
+    tool = Solutions()
 
-tool = Solution()
-
-input = [[1, 0, 0, 1], [0, 1, 1, 0], [0, 1, 1, 1], [1, 0, 1, 1]]
-print(tool.findCircleNum(input))
+    input = [[1, 0, 0, 1], [0, 1, 1, 0], [0, 1, 1, 1], [1, 0, 1, 1]]
+    print(tool.findCircleNum(input))

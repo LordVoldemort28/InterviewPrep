@@ -44,10 +44,10 @@ def partition_at_last(arr, low, high):
     return i+1
 
 def partition_at_first(arr, low, high):
-    
+
     pivot = arr[low]
     start, end = low, high
-    
+
     while start < end:
         while start < len(arr) and arr[start] <= pivot:
             start += 1
@@ -57,7 +57,7 @@ def partition_at_first(arr, low, high):
             arr[start], arr[end] = arr[end], arr[start]
 
     arr[low], arr[end] = arr[end], arr[low]
-    
+
     return end
 
 def quickSort(arr, low, high):
@@ -65,8 +65,7 @@ def quickSort(arr, low, high):
     if low < high:
         
         pi = partition_at_last(arr, low, high)
-        print(pi)
-        
+
         quickSort(arr, low, (pi-1))
         quickSort(arr, (pi+1), high)
 
@@ -77,6 +76,6 @@ def quickSort(arr, low, high):
 # quickSort(arr, 0, len(arr)-1)
 # print(arr)
 
-arr = [4,3,1,2]
-quickSort(arr, 0, len(arr)-1)
+arr = [87, 2, 56, 3, 34, 5, 28, 4]
+quickSort(arr, 3, 6)
 print(arr)

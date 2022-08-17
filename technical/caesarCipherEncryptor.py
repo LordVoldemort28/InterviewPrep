@@ -2,9 +2,9 @@ def caesarCipherEncryptor(string, key):
     #97-122
     out = ''
     for char in string:
-
-      out += chr((((ord(char)-97)+key) % 26) + 97)
-
+        
+        out += chr((((ord(char)-97)+key) % 26) + 97)
+        
     return out
 
 

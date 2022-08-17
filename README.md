@@ -68,9 +68,12 @@ Stanford Lecture
 * Project workshop 
 * Review each others resume
 
+Credits and Disclaimer
+----------
+Most of the problems sare taken from Leetcode and Algoexpert.
+
 Resources
 -----------------
 1. [Advent Code 2018](https://adventofcode.com/)
 2. [Google Foundation of Programming Problems](https://techdevguide.withgoogle.com/paths/foundational/find-longest-word-in-dictionary-that-subsequence-of-given-string/#code-challenge)
 3. [CS9: Problem-solving for CS Technical interview](http://web.stanford.edu/class/cs9/) 
- 

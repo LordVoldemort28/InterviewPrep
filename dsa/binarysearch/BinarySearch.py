@@ -15,7 +15,7 @@ Bonus: https://www.tutorialspoint.com/what-are-the-differences-between-recursion
 def binary_search_recursive(arr, element, low, high):
 
     if low > high:
-        return False
+        return -1
 
     mid = (low + high) // 2
 
@@ -36,8 +36,7 @@ def binary_search_iterative(arr, element, low, high):
 
         if element == arr[mid]:
             return mid
-
-        if element < arr[mid]:
+        elif element < arr[mid]:
             high = mid - 1
         else:
             low = mid + 1
@@ -51,4 +50,4 @@ def contains(ordered_list, number):
     return binary_search_iterative(ordered_list, number, 0, len(ordered_list)-1)
 
 
-print(contains([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 11))
+print(contains([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 10))

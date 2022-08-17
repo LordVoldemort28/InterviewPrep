@@ -53,7 +53,7 @@ class Graph:
 
         #Initialize all in-degrees as 0.
         in_degree = [0]*(self.V)
-
+        
         # Traverse adjacency lists to fill in-degrees of
         # vertices based on upcoming directed edges.
         # This step takes O(V + E) time

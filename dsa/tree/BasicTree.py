@@ -1,45 +1,5 @@
-class Queue(object):
-
-    def __init__(self):
-        self.queue = []
-
-    def enqueue(self, item):
-        self.queue.append(item)
-
-    def dequeue(self):
-        if not self.queue:
-            return None
-
-        return self.queue.pop(0)
-
-    def is_empty(self):
-        if not self.queue:
-            return True
-
-        return False
-
-
-class Stack(object):
-
-    def __init__(self):
-        self.stack = []
-
-    def push(self, item):
-        return self.stack.append(item)
-
-    def pop(self):
-
-        if not self.stack:
-            return None
-
-        return self.stack.pop()
-
-    def peek(self):
-
-        if not self.stack:
-            return None
-
-        return self.stack[-1]
+from stack.Stack import SimpleStack as Stack
+from queue.Queue import SimpleQueue as Queue
     
 class Node:
     def __init__(self, value):
@@ -77,6 +37,33 @@ class BasicTree():
             print(root.value, end=", ")
             self.inOrder(root.right)
 
+    def sort(self, root):
+        """
+        Visit left->Node->Right
+        Use Case: InOrder traversal gives nodes in non-decreasing order. 
+        To get nodes of BST in non-increasing order, a variation of 
+        InOrder traversal where InOrder traversal s reversed can be used. 
+        """
+        stack = [root]
+        result = []
+        
+        while stack:
+            
+            current = stack[-1]
+            
+            if current.right and (current.right not in result):
+                current = current.right
+                stack.append(current)
+                continue
+            
+            result.append(stack.pop())
+            
+            if current.left and (current.left not in result):
+                current = current.left
+                stack.append(current)
+
+        print([node.value for node in result])
+        
     def postOrder(self, root):
         """
         Visit left->right->Node
@@ -106,7 +93,7 @@ class BasicTree():
         while not queue.is_empty():
 
             current = queue.dequeue()
-            print(current.value)
+            print(current.value, end=', ')
 
             if current.left:
                 queue.enqueue(current.left)
@@ -124,7 +111,7 @@ class BasicTree():
         while stack.peek():
 
             current = stack.pop()
-            print(current.value)
+            print(current.value, end=', ')
 
             if current.right:
                 stack.push(current.right)
@@ -143,24 +130,25 @@ def main():
     root.right.left = Node(6)
     root.right.right = Node(9)
 
-    print("In order traversal: ", end="")
-    tree.inOrder(root)
-    print()
+    # print("In order traversal: ", end="")
+    # tree.inOrder(root)
+    # print()
     
-    print("Post order traversal: ", end="")
-    tree.postOrder(root)
-    print()
+    # print("Post order traversal: ", end="")
+    # tree.postOrder(root)
+    # print()
     
-    print("Pre order traversal: ", end="")
-    tree.preOrder(root)
-    print()
+    # print("Pre order traversal: ", end="")
+    # tree.preOrder(root)
+    # print()
     
-    print("BFS traversal: ", end="")
-    tree.bfs_traverse(root)
-    print()
+    # print("BFS traversal: ", end="")
+    # tree.bfs_traverse(root)
+    # print()
     
-    print("DFS traversal: ", end="")
-    tree.dfs_traverse(root)
+    # print("DFS traversal: ", end="")
+    # tree.dfs_traverse(root)
+    tree.sort(root)
     print()
     return
 

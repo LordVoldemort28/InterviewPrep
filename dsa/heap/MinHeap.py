@@ -27,15 +27,19 @@ class MinHeap(object):
     def __len__(self):
         return len(self.heap)
 
+    def peek(self):
+        if self.heap:
+            return self.heap[0]
+        
+if __name__ == '__main__':
+    minHeap = MinHeap()
 
-minHeap = MinHeap()
+    minHeap.push(2)
+    minHeap.push(6)
+    minHeap.push(1)
 
-minHeap.push(2)
-minHeap.push(6)
-minHeap.push(1)
+    print(minHeap.pop())
+    print(minHeap.pop())
+    print(minHeap.pop())
 
-print(minHeap.pop())
-print(minHeap.pop())
-print(minHeap.pop())
-
-print(len(minHeap))
+    print(len(minHeap))

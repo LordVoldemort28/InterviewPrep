@@ -18,6 +18,8 @@ Pseudocode
 leading from the start vertex
 4. If the distance/cost to a vertex we are checking is less than a know distance, update
 the shortest distance from that vertex
+
+Time complexity: O(|E| log |E| ) = O(|E| 2 log |V|) = O(|E| log |V|) with heap
 """
 class Graph():
 
