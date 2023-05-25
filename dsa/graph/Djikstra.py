@@ -45,7 +45,7 @@ class Graph():
         return min_index
 
     def dijkstra(self, src):
-        
+
         """
         Used to get optimal distance from src to other vertex in graph
         Time Complexity: Wikipedia: O(|E| + |V|log|V|)

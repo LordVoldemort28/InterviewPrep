@@ -26,16 +26,16 @@ def inOrder(root, values):
 
 
 # O(n)time and O(d) space
-def validateBst(tree, minValue=float("-inf"), maxValue=float("inf")):
+def validateBst(node, minValue=float("-inf"), maxValue=float("inf")):
 
-	if not tree:
+	if not node:
 		return True
 
-	if not(minValue <= tree.value < maxValue):
+	if not(minValue <= node.value < maxValue):
 		return False
 
-	return (validateBst(tree.left, minValue, tree.value) and
-            validateBst(tree.right, tree.value, maxValue))
+	return (validateBst(node.left, minValue, node.value) and
+            validateBst(node.right, node.value, maxValue))
 
 
 #=========Test 1===============

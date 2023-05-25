@@ -32,13 +32,13 @@ def getNthFib(n):
 
 
 start = datetime.now()
-getNthFib(999)
+getNthFib(10)
 end = datetime.now()
 print((end-start))
 
 
-start = datetime.now()
-getNthFib2(999)
-end = datetime.now()
-print(float(end-start))
+# start = datetime.now()
+# getNthFib2(999)
+# end = datetime.now()
+# print(float(end-start))
 

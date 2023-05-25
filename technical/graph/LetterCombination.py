@@ -20,17 +20,17 @@ class Solution(object):
             9: "wxyz"
         }
 
-        def dfs(index, path):
+        def dfs(digitIndex, path):
 
-            if index == size:
+            if digitIndex == size:
                 all_paths.append(path)
                 return
 
-            current_digit = letters[int(digits[index])]
+            current_digit = letters[int(digits[digitIndex])]
 
             for alphabet in current_digit:
 
-                dfs(index+1, path+alphabet)
+                dfs(digitIndex+1, path+alphabet)
 
         dfs(0, "")
 

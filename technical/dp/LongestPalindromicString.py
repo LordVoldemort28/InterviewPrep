@@ -17,7 +17,7 @@ for palindrome and store the max length possible.
 Time complexity -> O(n^2)
 Space complexity -> O(1)
 """
-def longestPalindromicSubstring(string):
+def longestPalindromicSubstringForce(string):
     lengthLongestPalindrome = float("-inf")
     longestSubstringPalindrome = None
     nChars = len(string)
@@ -44,7 +44,6 @@ Time complexity -> O(n^2)
 """
 Manachers's Algorithm
 Time complexity -> O(n)
-
 """
 test_cases = {
     'test_case_1': {

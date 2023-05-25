@@ -65,3 +65,41 @@
 	(1) Throughput of each layer
 	(2) Latency caused between each layer
 	(3) Overall latency justification
+
+
+Approach
+------------
+
+Entity or Model in DB
+APIs entry points
+How services are interacting with each other and DB
+
+
+Talk about every decisions you make
+
+## Metrics
+- See the interviewer as the customer, requirements might be intentionally vague
+- Write assumption you are making
+- Fell free to create a diagram if that helps you clarifying your thoughts.
+
+
+### Fulfilling requirements
+- Non functional requirements (amount of load, load distribution, security) ways of interacting with the system(user access, scheduled processes, synchronous/asynchronous communication) and data flow. 
+
+- Explicitly mention all the assumptions that are being made.
+- Spend majority of time on the critical requirements identified and on the core functionality 
+- Justify the design choices that are made.
+- Design the solution for scale, would more transaction seamlessly work.
+
+### Designing for performance
+-  What are the key business and technical metrics for the system? 
+-  Potential Bottlenecks or pain points
+-  What are failure points exists
+-  What redundancy can we build in to reduce single points of failure
+-  How does someone get logs and debug the system
+
+MOST IMPORTANT TALK ABOUT TRADEOFF WITH DIFFERENT DESIGN
+Scaling is critical component of software design at amazon
+Fault tolerance translate to the Customer Obsession leadership principle
+
+If the interviewer asks you to dive deep into something you are unfamilier with, tell them and suggest some other areas you are familier with and dive into that. 

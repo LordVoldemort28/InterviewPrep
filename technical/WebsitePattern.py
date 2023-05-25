@@ -1,4 +1,5 @@
-from collections import defaultdict, Counter
+
+                   from collections import defaultdict, Counter
 from itertools import combinations
 
 
@@ -7,7 +8,7 @@ class Solution(object):
         """
         :type username: List[str]
         :type timestamp: List[int]
-        :type website: List[str]
+        :type website: List[str]                                                                                
         :rtype: List[str]
         """
         MAX_WEBSITES = 3

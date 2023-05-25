@@ -8,7 +8,7 @@ def maxSubsetNoAdjacent(array):
     if len(array) < 2:
         return array[-1]
     
-    maxSum = array[:]
+    maxSum = array.copy()
     maxSum[1] = max(array[0], array[1])
 
     for idx in range(2, len(array)):

@@ -13,14 +13,50 @@ class Solution(object):
         for i in range(1, len(s)+1):
 
             for j in range(0, i):
-
+                word = s[j:i]
                 if dp[j] and s[j:i] in wordDict:
                     dp[i] = True
                     break
 
         return dp[len(s)]
 
+test_cases = {
+    'test_case_1': {
+        'description': 'cycle test',
+        'input': {
+            's': 'leetcodet',
+            'words': ["leet", "code", "t"]
+        },
+        'output': True,
+        'active': True
+    },
+    'test_case_2': {
+        'description': 'cycle test',
+        'input': {
+            's': 'catsdogcats',
+            'words': ["cat", "cats", "catsdogcats", "dog", "dogcatsdog", "hippopotamuses", "rat", "ratcatdogcat"]
+        },
+        'output': True,
+        'active': True
+    }
+}
 
-input = ["leet", "code"]
-tool = Solution()
-print(tool.wordBreak("leetcode", input))
+for test_name, data in test_cases.items():
+
+    print('Running -> {} -> {}'.format(test_name, data['description']))
+
+    if data['active'] == False:
+        print('Skipped!')
+        continue
+
+    input = data['input']
+    result = Solution().wordBreak(input['s'], input['words'])
+    if result == data['output']:
+        print('Test passed!')
+    else:
+        print('Test fail')
+        print('Expected Output: ', end="")
+        print(data['output'])
+        print('Actual Output: ', end="")
+        print(result)
+    print()

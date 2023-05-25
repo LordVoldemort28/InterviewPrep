@@ -19,36 +19,35 @@ class Stack(object):
             return None
 
         return self.stack[-1]
+    
 
+class Solution(object):
+    def isValid(self, s):
+        openers_to_closers = {
+            ')': '(',
+            '}': '{',
+            ']': '[',
+        }
 
-def is_valid(code):
+        opening = openers_to_closers.values()
+        closing = openers_to_closers.keys()
 
-    openers_to_closers = {
-        ')': '(',
-        '}': '{',
-        ']': '[',
-    }
+        stack = Stack()
 
-    opening = openers_to_closers.values()
-    closing = openers_to_closers.keys()
+        for bracket in s:
 
-    stack = Stack()
+            if bracket in opening:
+                stack.push(bracket)
+            elif bracket in closing and stack.peek() is openers_to_closers[bracket]:
+                stack.pop()
+            else:
+                return False
 
-    for bracket in code:
+        if stack.peek() is None:
+            return True
 
-        if bracket in opening:
-            stack.push(bracket)
-        elif bracket in closing and stack.peek() is openers_to_closers[bracket]:
-            stack.pop()
-        else:
-            return False
+        return False
 
-    if stack.peek() is None:
-        return True
-
-    return False
-
-
-print(is_valid('()'))
-print(is_valid('([]{[]})[]{{}()}'))
-print(is_valid('([)]'))
+print(Solution().isValid('()'))
+print(Solution().isValid('([]{[]})[]{{}()}'))
+print(Solution().isValid('([)]'))

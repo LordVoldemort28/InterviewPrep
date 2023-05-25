@@ -13,7 +13,7 @@ def bellmenFord(edges, src, vertices):
 
             if dist[src] != float("inf") and (dist[src] + weight < dist[dest]):
                 dist[dest] = dist[src] + weight
-
+        print(dist)
     # Relaxing once again to detect negative cycle
     # if value changes then we have a negative cycle in the graph
     # and we cannot find the shortest distances
